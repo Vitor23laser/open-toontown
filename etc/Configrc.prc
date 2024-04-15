@@ -9,7 +9,7 @@ paranoid-clock 1
 lock-to-one-cpu 1
 collect-tcp 1
 collect-tcp-interval 0.2
-server-version sv1.0.47.38
+server-version sv1.4.40.32
 server-version-suffix
 model-path resources
 dc-file etc/toon.dc
@@ -19,7 +19,7 @@ verify-ssl 0
 ssl-cipher-list DEFAULT
 chan-config-sanity-check #f
 require-window 0
-language english
+language portuguese
 icon-filename phase_3/models/gui/toontown.ico
 dx-management 1
 tt-specific-login 1
