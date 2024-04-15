@@ -48,7 +48,6 @@ class TimeManager(DistributedObject.DistributedObject):
             self.accept(OTPGlobals.DetectGarbageHotkey, self.handleDetectGarbageHotkey)
         if self.updateFreq > 0:
             self.startTask()
-        return
 
     def announceGenerate(self):
         DistributedObject.DistributedObject.announceGenerate(self)
@@ -68,7 +67,6 @@ class TimeManager(DistributedObject.DistributedObject):
             self.cr.timeManager = None
         del self._gotFirstTimeSync
         DistributedObject.DistributedObject.disable(self)
-        return
 
     def delete(self):
         self.ignore(OTPGlobals.SynchronizeHotkey)
@@ -79,7 +77,6 @@ class TimeManager(DistributedObject.DistributedObject):
         if self.cr.timeManager == self:
             self.cr.timeManager = None
         DistributedObject.DistributedObject.delete(self)
-        return
 
     def startTask(self):
         self.stopTask()
